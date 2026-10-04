@@ -1,0 +1,85 @@
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz, amsmath, amsfonts, geometry, parskip, ifthen, microtype, titlesec, setspace, fancyhdr, hyperref, lmodern, tcolorbox}
+
+\def\enddate{January 31, 2025}
+\def\season{4}
+\def\week{3}
+\def\set{A} %A: easier, B: tougher, the intro changes depending on the set.
+
+\pagestyle{fancy}
+\fancyfoot[L]{Problems of the Week - \set}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+
+\setlength{\headheight}{15pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Problems of the Week, \season.\week},
+    pdfauthor={Taraash},
+    pdfsubject={Problems of the Week, Évariste},
+    pdfpagemode=FullScreen,
+}
+
+\onehalfspacing
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{2em}{1em}
+
+\title{\vspace{-2cm}Problems of the Week --- Évariste \\ Season \season \\ Week \week \\ Set \set}
+\author{Taraash, Himanshu}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{Problems of the Week}
+Welcome to week \week! You will be given \ifthenelse{\equal{\set}{A}}{a week}{about 10 days} to solve (or attempt) the problems here. The problems here are taken from a few \ifthenelse{\equal{\set}{A}}{high-school}{undergraduate} olympiads and preparation books. These sources along with the solution will be uploaded after the due date. \ifthenelse{\equal{\set}{A}}{If you find these problems easy, tougher problems will be found on set B.}{These are tough problems! Take your time, collaborate, and enjoy!} \\ Notes on submission and grading will also be found at the end. You have until \textbf{\enddate}.\\\\\\
+\begin{Large} \textit{Prizes:} \end{Large}
+\begin{align*}
+        1^{st}:&\quad 900rs \text{ + club membership} \\
+        2^{nd}:&\quad 700rs \text{ + club membership} \\
+        3^{rd}:&\quad 400rs \text{ + club membership} \\
+        \text{Honorable mentions:}&\quad \text{Club membership}
+\end{align*}
+    
+All the best! GL HF :D
+
+\newpage
+%here goes the questions and stuff
+\newpage
+
+{\color{RubineRed} \rule{\linewidth}{0.5mm}}
+\headrule{\color{RubineRed}  NOTES}
+\vspace{20pt}
+\begin{enumerate} 
+\item  The exam starts as soon as you receive it and ends at \emph{\enddate{} \emph{end of day}}.
+\item Hints will be provided on \href{https://www.instagram.com/evariste.iiitd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==}{Instagram}, so make sure to keep us updated with your progress by tagging us (evariste.iiitd) to get appropriate hints!
+\item If you exceed the deadline, we will still review your solutions/attempt if you like, though they will not be graded.
+\item A clean, scanned pdf of your work is enough, though other methods are welcome, too.
+\item Marks awarded will depend on the clarity of your presentation. Work in rough first, and then make a final version, do not hand in your rough work. 
+\item To have your solutions evaluated. You can reach us by:
+    \begin{enumerate}
+    \item Mail: \href{mailto:evariste@sc.iiitd.ac.in}{\color{Orchid}Évariste} (evariste@sc.iiitd.ac.in).
+    \item Telegram: \href{https://t.me/joinchat/Da8m6kMPZmX7g93YWxlnKw}{Link to join}, or \href{https://t.me/TaraashMittal}{DM me}.
+    \item WhatsApp community: \href{https://chat.whatsapp.com/Gw1a1ARhVMsEIDGdo0DjRw}{Link to join}.
+    \item We could meet up if you like! Send a mail to \href{mailto:taraash23552@iiitd.ac.in}{\color{Orchid}Taraash} (taraash23552@iiitd.ac.in), or to Évariste and we'll see what we can do!
+    \end{enumerate}
+\item Make sure the PDF you submit has the form \colorbox{Dandelion}{\texttt{f"\{name\}\_\{roll\_number\}\_potw\_\season.\week.pdf"}} with python as the interpreter, and the mail you write is titled \colorbox{Dandelion}{\texttt{POTW \season.\week{} submission}}.
+\item That's it! Have fun, discussion in the telegram group or anywhere is welcome too!
+\end{enumerate}
+
+
+\vspace{20pt}
+\begin{center}
+\begin{tikzpicture}
+\color{CadetBlue}
+  \draw[scale=0.5,domain=0:360,smooth,variable=\t] plot(\t:{sin(10*\t)});
+\end{tikzpicture}
+\end{center}
+
+\end{document}

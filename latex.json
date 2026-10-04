@@ -1,0 +1,69 @@
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Problems of the Week": {
+		"prefix": "POTW",
+		"body": [
+			"\\documentclass[12pt, letterpaper]{article}",
+			"\\usepackage[dvipsnames]{xcolor}",
+			"\\usepackage{tikz, amsmath, amsfonts, geometry, parskip, ifthen, microtype, titlesec, setspace, fancyhdr, hyperref, lmodern, tcolorbox}",
+			"\n\\def\\enddate{${1:January 31, 2025}}",
+			"\\def\\season{${2:4}}",
+			"\\def\\week{${3:3}}",
+			"\\def\\set{${4:A}} %A: easier, B: tougher, the intro changes depending on the set.",
+			"\\def\\coord{${5:Taraash}}",
+			"\n\\pagestyle{fancy}",
+			"\\fancyfoot[L]{Problems of the Week - \\set}",
+			"\\fancyhead{}",
+			"\\renewcommand{\\headrulewidth}{0pt}",
+			"\n\\setlength{\\headheight}{15pt}",
+			"\n\\hypersetup{\ncolorlinks=true,\nlinkcolor=blue,\nfilecolor=magenta,\nurlcolor=cyan,\npdftitle={Problems of the Week, \\season.\\week},\npdfauthor={\\coord},\npdfsubject={Problems of the Week, \\'Evariste},\npdfpagemode=FullScreen,\n}",
+			"\n\\onehalfspacing",
+			"\n\\titleformat{\\section}{\\large\\bfseries}{\\thesection}{1em}{}\n\\titlespacing*{\\section}{0pt}{2em}{1em}",
+			"\n\\title{\\vspace{-2cm}Problems of the Week --- \\'Evariste \\\\\\ Season \\season \\\\\\ Week \\week \\\\\\ Set \\set}\n\\author{\\coord}\n\\date{\\today}",
+			"\n\\begin{document}\n\\maketitle\n\\section*{Problems of the Week}\nWelcome to week \\week! You will be given \\ifthenelse{\\equal{\\set}{A}}{a week}{about 10 days} to solve (or attempt) the problems here. The problems here are taken from a few \\ifthenelse{\\equal{\\set}{A}}{high-school}{undergraduate} olympiads and preparation books. These sources along with the solution will be uploaded after the due date. \\ifthenelse{\\equal{\\set}{A}}{If you find these problems easy, tougher problems will be found on set B.}{These are tough problems! Take your time, collaborate, and enjoy!} \\\\ Notes on submission and grading will also be found at the end. You have until \\textbf{\\enddate}.\\\\\\\\[2em]\\n\\begin{Large} \\textit{Prizes:} \\end{Large}\n\\begin{align*}\n1^{\\text{st}}:&\\quad 900\\text{rs} \\text{ + club membership}\\\\\\ \n2^{\\text{nd}}:&\\quad 700\\text{rs} \\text{ + club membership}\\\\\\ \n3^{\\text{rd}}:&\\quad 400\text{rs} \\text{ + club membership} \\\\\\\\\n\\text{Honorable mentions:}&\\quad \\text{Club membership}\n\\end{align*}",
+			"\nAll the best! GL HF :D",
+			"\n\\newpage\n${0:%here goes the questions and stuff}\n\\newpage",
+			"\n{\\color{RubineRed} \\rule{\\linewidth}{0.5mm}}\n\\headrule{\\color{RubineRed}  NOTES}\\vspace{20pt}\n\\begin{enumerate}\n\\item  The exam starts as soon as you receive it and ends at \\emph{\\enddate{} \\emph{end of day}}.\n\\item A clean, scanned pdf of your work is enough, though other methods are welcome, too.\n\\item Marks awarded will depend on the clarity of your presentation. Work in rough first, and then make a final version, do not hand in your rough work.\n\\item To have your solutions evaluated. You can reach us by:\n\\begin{enumerate}\n\\item Mail: \\href{mailto:evariste@sc.iiitd.ac.in}{\\color{Orchid}Évariste} (evariste@sc.iiitd.ac.in).\n\\item Telegram: \\href{https://t.me/joinchat/Da8m6kMPZmX7g93YWxlnKw}{Link to join}, or \\href{https://t.me/TaraashMittal}{DM me}.\n\\item WhatsApp community: \\href{https://chat.whatsapp.com/Gw1a1ARhVMsEIDGdo0DjRw}{Link to join}.\n\\item We could meet up if you like! Send a mail to \\href{mailto:taraash23552@iiitd.ac.in}{\\color{Orchid}Taraash} (taraash23552@iiitd.ac.in), or to Évariste and we'll see what we can do!\n\\end{enumerate}\n\\item Make sure the PDF you submit has the form \\colorbox{Dandelion}{\\texttt{f\"\\{name\\\\}\\_\\{roll\\_number\\\\}\\_potw\\_\\season.\\week.pdf\"}}, and the mail you write is titled \\colorbox{Dandelion}{\\texttt{POTW \\season.\\week{} submission}}.\n\\item That's it! Have fun, discussion in the telegram group or anywhere is welcome too!\n\\end{enumerate}",
+			"\n\\vspace{20pt}\n\\begin{center}\n\\begin{tikzpicture}\n\\color{CadetBlue}\n\\draw[scale=0.5,domain=0:360,smooth,variable=\\t] plot(\\t:{sin(10*\\t)});\n\\end{tikzpicture}\n\\end{center}",
+			"\n\\end{document}"
+		],
+		"description": "Problems of the Week"
+	},
+	"solution_potw": {
+		"prefix": "spotw",
+		"body": [
+			"\\documentclass[12pt, letterpaper]{article}",
+			"\\usepackage[dvipsnames]{xcolor}",
+			"\\usepackage{tikz, amsmath, amsfonts, geometry, parskip, ifthen, microtype, titlesec, setspace, fancyhdr, hyperref, lmodern, tcolorbox}",
+			"\n\\def\\season{${1:3}}",
+			"\\def\\week{${2:2}}",
+			"\n\\pagestyle{fancy}",
+			"\\fancyfoot[L]{Problems of the Week - Solutions}",
+			"\\fancyhead{}",
+			"\\renewcommand{\\headrulewidth}{0pt}",
+			"\n\\setlength{\\headheight}{15pt}",
+			"\n\\hypersetup{\ncolorlinks=true,\nlinkcolor=blue,\nfilecolor=magenta,\nurlcolor=cyan,\npdftitle={Problems of the Week, \\season.\\week},\npdfauthor={Taraash},\npdfsubject={Problems of the Week, Évariste},\npdfpagemode=FullScreen,\n}",
+			"\n\\onehalfspacing",
+			"\n\\titleformat{\\section}{\\large\\bfseries}{\\thesection}{1em}{}\n\\titlespacing*{\\section}{0pt}{2em}{1em}",
+			"\n\\title{\\vspace{-2cm}Problems of the Week --- \\'Evariste \\\\\\ Season \\season \\\\\\ Week \\week \\\\\\ Solutions}\n\\author{Taraash}\n\\date{\\today}",
+			"\n\\begin{document}\\\\maketitle",
+			"\n\\textbf{Question 1.}\n${0:Question}. {\\color{gray}(source)}\n\n\\emph{Solution.} \\colorbox{Dandelion}{Idea}\nSolution.\n\\colorbox{CadetBlue}{answer}.\\newpage",
+			"\n{\\color{RubineRed} \\rule{\\linewidth}{0.5mm}}\n\\headrule{\\color{RubineRed}  NOTES}\n\\vspace{20pt}\n\\begin{enumerate}\n\\item  If I made any mistake, either in solving the problem, or just a typo (which is not unlikely), please let me know so I can fix it.\n\\item I have been pretty thorough here (I hope!), you don't have to show every step in your solution.\n\\item Your solution can be different! My way of solving is likely different than yours, so if you've come up with a different solution, and if I like it, I may post it on telegram, or eventually in this doc.\n\\item That's it! Hope you had fun, and see you next week?\n\\end{enumerate}",
+			"\n\\vspace{20pt}\n\\begin{center}\n\\begin{tikzpicture}\n\\color{ForestGreen}\n\\draw[scale=0.5,domain=0:360,smooth,variable=\\t] plot(\\t:{sin(10*\\t)});\n\\end{tikzpicture}\n\\end{center}",
+			"\n\\end{document}"
+		],
+		"description": "Problems of the Week solutions"
+	}
+}

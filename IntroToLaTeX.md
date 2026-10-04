@@ -2,7 +2,7 @@
 
 With a doc in `markdown` for the memes.
 
-![latex\neq\LaTeX](<WhatsApp Image 2025-10-04 at 17.06.47_79924242.jpg>)
+![latex\neq\LaTeX](<images/WhatsApp Image 2025-10-04 at 17.06.47_79924242.jpg>)
 
 ## What is it?
 
@@ -51,7 +51,7 @@ pdflatex main.tex
 
 Assuming you named your file `main.tex`. Note that every editor does this itself, so you need not worry about these commands.
 
-![ms-word-best-practices](<WhatsApp Image 2025-10-05 at 16.51.32_577eeaa5.jpg>)
+![ms-word-best-practices](<images/WhatsApp Image 2025-10-05 at 16.51.32_577eeaa5.jpg>)
 
 ## $\LaTeX$
 
@@ -145,7 +145,7 @@ You can find tables for these online. If you're using the LaTeX Workshop extensi
 
 ### More environments
 
-![meme-3](<WhatsApp Image 2025-10-05 at 16.58.17_90e7b816.jpg>)
+![meme-3](<images/WhatsApp Image 2025-10-05 at 16.58.17_90e7b816.jpg>)
 
 Ordered lists
 
